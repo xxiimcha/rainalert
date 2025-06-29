@@ -1,4 +1,5 @@
-"use client";
+"use client"; // Add this at the top
+
 import { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { FaEye, FaEyeSlash, FaWater } from "react-icons/fa";
@@ -14,8 +15,7 @@ export default function ResetPassword() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const token = searchParams.get("token");
-  console.log("ResetPassword Page: Token from URL params:", token);
-  
+
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -48,7 +48,6 @@ export default function ResetPassword() {
       setIsLoading(false);
       return;
     }
-    console.log("Attempting password reset with data:", { token, password: formData.password });
 
     try {
       const response = await fetch("/api/auth/reset-password", {
@@ -130,4 +129,4 @@ export default function ResetPassword() {
       </div>
     </div>
   );
-} 
+}
