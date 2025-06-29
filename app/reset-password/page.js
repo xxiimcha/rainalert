@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { FaEye, FaEyeSlash, FaWater } from "react-icons/fa";
 import { toast } from "react-toastify";
 import { Lora } from "next/font/google";
+import { Suspense } from 'react'
 
 const Lorafont = Lora({
   subsets: ["latin"],
