@@ -37,11 +37,11 @@ import mysql from "mysql2/promise"; // Import MySQL2 with promise support
 
 // Database configuration object
 const dbConfig = {
-  host: "localhost", // Database server hostname
+  host: "153.92.15.45", // Database server hostname
   port: 3306, // Database server port
-  user: "root", // Database username
-  password: "", // Database password (empty for development)
-  database: "floodmonitoring_db", // Database name (updated to match actual DB)
+  user: "u315184670_rainalert", // Database username
+  password: "V8l5bp!^0>d", // Database password (empty for development)
+  database: "u315184670_rainalert", // Database name (updated to match actual DB)
   waitForConnections: true, // Wait for available connections
   connectionLimit: 10, // Maximum number of concurrent connections
   queueLimit: 0, // No limit on connection queue
