@@ -61,7 +61,7 @@ const ForgotPassword = ({ closeModal }) => {
         </div>
 
         <p className="text-gray-600 mb-6">
-          Enter your username and we'll send password reset instructions to your registered email address.
+          {"Enter your username and we'll send password reset instructions to your registered email address."}
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
